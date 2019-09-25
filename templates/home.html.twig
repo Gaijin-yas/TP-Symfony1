@@ -1,0 +1,23 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Bienvenue sur AirBnb</h1>
+
+<p>/!\ Site en cours de construction /!\</p>
+
+        <h1>Voici la liste des annonces dispo:</h1>
+
+        {% for tableau in tableaux %}
+            <ul>
+                <li>{{ tableau.id }}</li>
+                <li>{{ tableau.title }}</li>
+            </ul>
+        {% endfor %}
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+
+    {{ form_errors(form) }}
+
+
+
+    {{ form_row(form.title) }}
+    {{ form_row(form.prices) }}
+    {{ form_row(form.content) }}
+
+
+
+    <button type="submit">Submit</button>
+
+    {{ form_end(form) }}
+
+{% endblock %}
