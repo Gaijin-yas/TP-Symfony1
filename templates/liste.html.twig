@@ -10,11 +10,12 @@
         <li>{{ annonce.title }}</li>
         <li>{{ annonce.content }}</li>
         <li>{{ annonce.price }}</li>
-        <li>{{ annonce.created }}</li>
-{#<a href="{{ path('id', {id: annonce.id}) }}">aller vers la liste</a> #}
+       <li> {{ annonce.createDate | date('d/m/Y')}}<li>
+       <li><a href="{{ path('detail', {annonce: annonce.id}) }}">aller vers la liste</a> </li>
 
 </ul>
 {% endfor %}
+    <a href="{{ path('home') }}">go home</a>
 
 
 
